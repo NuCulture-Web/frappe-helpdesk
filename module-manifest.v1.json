@@ -1,0 +1,30 @@
+{
+	"contract": "module-manifest.v1",
+	"id": "helpdesk",
+	"name": "Helpdesk",
+	"description": "Frappe Helpdesk on the client's ERPNext site: email and portal tickets, teams and assignment rules, SLAs, canned responses, a customer portal and a knowledge base.",
+	"scope": "core",
+	"product": "back-office",
+	"frappeApp": "helpdesk",
+	"enable": {
+		"perCompany": true,
+		"method": "GET",
+		"path": "/helpdesk"
+	},
+	"probe": {
+		"perCompany": true,
+		"method": "GET",
+		"path": "/.well-known/nuculture-build/helpdesk.json"
+	},
+	"peopleRoles": {
+		"Owner": [
+			"Agent Manager"
+		],
+		"Manager": [
+			"Agent Manager"
+		],
+		"Staff": [
+			"Agent"
+		]
+	}
+}
